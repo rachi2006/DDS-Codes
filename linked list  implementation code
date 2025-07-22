@@ -33,9 +33,19 @@ void insertStart(int num){
     cout << num << "inserted at start" << endl;
    
 }
+
+void traverse (){
+    node * temp = head;
+    while(temp != NULL){
+        cout<< temp->data<<"-->";
+        temp = temp->next;
+    }
+    cout<<"NULL";
+}
 int main(){
     insertEnd(10);
     insertEnd(20);
     insertEnd(30);
     insertStart(50);
+    traverse();
 }
